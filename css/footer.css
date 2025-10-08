@@ -21,3 +21,9 @@ footer{
 
 
 }
+.redes a:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.411);
+    border-radius: 5%;
+
+}

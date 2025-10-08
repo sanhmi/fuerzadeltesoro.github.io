@@ -1,0 +1,133 @@
+#noticias {
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 100px;
+    padding: 0% 0% 30%;
+}
+
+@media (min-width: 600px) {
+    #noticias {
+        top: 170px;
+        padding: 0% 9% 30%;
+    }
+}
+
+@media (min-width: 900px) {
+    #noticias {
+        top: 250px;
+        padding: 0% 18% 30%;
+    }
+}
+
+#noticias h1 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 35px;
+    color: #020581;
+    padding: 15px 0;
+
+
+}
+
+.grid-not {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+
+    .grid-not{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media (min-width: 900px) {
+
+    .grid-not{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+.noti {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.noti img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.noti a {
+    text-decoration: none;
+    font-family: "Varela Round", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    padding: 20px 0;
+    color: #020581;
+
+}
+
+.noti p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+#boton {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5bb132;
+    border-radius: 10px;
+
+}
+
+#boton::before{
+    content: "+";
+    font-size: 16px; 
+    color: white;
+}
+
+
+
+@media (min-width: 600px) {
+
+    #boton {
+        margin: 0 9%;
+        
+    }
+
+    #boton::before{
+        content: "Mas Noticias";
+    }
+
+
+}
+
+@media (min-width: 900px) {
+
+    #boton {
+        margin: 0 18%;
+    }
+
+
+}

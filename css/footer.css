@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #020581;
+    color: white;
+    text-align: center;
+}
+
+.redes{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.redes img{
+  
+    display: block;
+    height: auto;
+    width: 40px;
+
+
+}

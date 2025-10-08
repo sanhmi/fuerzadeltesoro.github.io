@@ -1,0 +1,145 @@
+
+
+.menu-icon {
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: 22.5%;
+    right: 5%;
+    cursor: pointer;
+    background: #020581;
+    border-radius: 5px;
+}
+
+
+.menu-icon #spn1,#spn2,#spn3 {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 5px;
+    margin: 3px 2.5px;
+    border-radius: 10px;
+    transition: all 400ms ease;
+        
+}
+#spn1 {
+    background: #f5a801;
+
+}
+
+
+#spn2 {
+    top: 10px;
+    background: #5bb132;
+     
+}
+#spn3 {
+    top: 21px;
+    background:#e11f1c ;
+    
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu-icon #spn1 {
+    transform: rotate(140deg);
+    top: 12px;
+    background: #fff;
+}
+#menu-toggle:checked ~ .menu-icon #spn2 {
+    opacity: 0;
+}
+#menu-toggle:checked ~ .menu-icon #spn3 {
+    transform: rotate(-140deg);
+    top: 12px;
+    background: #fff;
+}
+
+#menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #020481a9;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+#menu ul li {
+    display: block;
+    height: 80px;
+    padding: 15px;
+
+}
+
+#menu li:hover {
+    background-color: #ffffff5d;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    font-size: 25px;
+    padding: 25px;
+    
+}
+
+#menu-toggle:checked ~ #menu {
+    transform: translateX(0%);
+}
+
+@media (min-width: 1000px) {
+    .menu-icon {
+        display: none; /* Ocultamos el hamburguesa */
+    }
+
+    #menu {
+        position: relative;
+        top: 3%;
+        width: auto;
+        height: auto;
+        transform: translateX(0%); /* siempre visible */
+        display: flex;
+        align-items: center;  /* centra verticalmente en el header */
+        background: none;
+
+    }
+
+    #menu ul {
+        display: flex;            /* pone los li en fila */
+        gap: 20px;                /* separación entre botones */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu ul li {
+        display: inline-block;    /* opcional, ya flex lo acomoda */
+        flex: 1;
+    }
+
+    #menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #020581;           /* cambia a azul para desktop */
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 15px;
+        transition: background 0.3s;
+        box-sizing: border-box;
+    }
+
+    #menu a:hover {
+        background: rgba(0,0,0,0.1);
+        border-radius: 5px;
+    }
+}

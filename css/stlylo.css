@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(noticias.css);
+@import url(footer.css);
+
+/*limpieza de floats*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+/*fin limpieza de floats*/
+
+/*inicio reset css*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*fin reset css*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap; 
+
+}
+
+header {
+    width: 100%;
+    height: 11%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.70);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+@media (min-width: 480px) {
+
+    header {
+        height: 8%;
+        
+    }
+
+
+}
+
+@media (min-width: 600px) {
+
+    header {
+        height: 11%;
+        
+    }
+
+
+}
+@media (min-width: 1300px) {
+
+    header {
+        height: 13%;
+    }
+
+
+}
+
+@media (min-width: 1600px) {
+
+    header {
+        height: 15%;
+    }
+
+
+}
+
+#contenedor{
+   height: 100%;
+   margin-top: 9.5%;
+}
+
+
+@media (min-width: 480px) {
+
+    #contenedor {
+        margin-top: 5.2%;
+        
+    }
+
+
+}
+
+@media (min-width: 600px) {
+
+    #contenedor {
+        margin-top: 4.8%;
+        
+    }
+
+
+}
+@media (min-width: 1000px) {
+
+    #contenedor {
+        margin-top: 3.2%;
+    }
+
+
+}
+
+@media (min-width: 1600px) {
+
+    #contenedor {
+        margin-top: 2.9%;
+    }
+
+
+}
+
+
+
+#contenedor img{
+   height: 60%;
+   width: auto;
+   display: block;
+}
+
+
+
+
+
+
+
+/*
+#contenedor {
+    flex: 1;
+    display: flex;
+    width: 98%;
+    margin: auto;
+    min-height: 11%;
+    gap: 5px;
+}
+
+
+
+#contenedor img {
+    width: 52%;
+    position: absolute;
+    margin-top: 2.5%;
+    display: flex;   
+    
+}
+
+@media (min-width: 550px) {
+
+    #contenedor img {
+        width: 42%;
+        margin-top: 2%;
+       
+    }
+
+
+}
+
+@media (min-width: 810px) {
+
+    #contenedor img {
+        width: 30%;
+        margin-top: 2%;
+    }
+
+
+}
+
+@media (min-width: 1000px) {
+
+    #contenedor img {
+        width: 25%;
+        margin-top: 2%;
+    }
+
+
+}
+
+@media (min-width: 1300px) {
+
+    #contenedor img {
+        width: 20%;
+        margin-top: 1.5%;
+    }
+
+
+}*/
+
+.header label {
+    float: right;
+    margin: 3% 0;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+

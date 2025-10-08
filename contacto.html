@@ -1,0 +1,73 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stlylo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Fuerza Del Tesoro</title>
+</head>
+
+<body>
+    <header>
+        <div id="contenedor">
+            <img src="img/unnamed.png" alt="Fuerza del Tesoro">
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span id="spn1"></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+        </label>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Mas Que Un Juego</a></li>
+                <li><a href="#">Nuestra Historia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="caja1">
+            <h1>Envianos un Mensaje</h1>
+
+            <a href="#">
+                <img src="img/wat.png" alt="whatsApp">
+            </a>
+
+            <label for="modal-toggle">
+                <img src="img/mail.png" alt="whatsApp">
+            </label>
+            <input type="checkbox" id="modal-toggle">
+            <div class="modal">
+                <div class="modal content">
+                    <label for="modal-toggle" class="btn-cerrar">&times;</label>
+                    <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                        <input type="email" id="email" name="email" placeholder="Tu Correo" required>
+                        <textarea name="mensaje" id="mensaje" rows="5" placeholder="Tu Mensaje"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                
+                </div>
+            </div>    
+        
+    </main>
+
+    <footer>
+        <div class="redes">
+            <img id="face" href="#" src="/img/face.png" alt="facebook">
+            <img id="insta" href="#" src="/img/insta.png" alt="instagram">
+            <img id="tik" src="/img/tik.png" alt="Tiktok">
+        </div>
+        &copy; Derechos Reservados Fuerza Del Tesoro 2025
+    </footer>
+</body>
+
+
+
+</html>
